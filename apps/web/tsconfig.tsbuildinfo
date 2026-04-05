@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/types.ts","./src/components/authportal.tsx","./src/components/automationnode.tsx","./src/components/profiledashboard.tsx","./src/components/securitycenter.tsx","./src/components/workflowstudio.tsx"],"version":"5.9.3"}

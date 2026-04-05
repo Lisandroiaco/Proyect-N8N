@@ -1,0 +1,16 @@
+{
+  "name": "mini-n8n-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c cyan,yellow \"npm run dev --workspace @mini-n8n/api\" \"npm run dev --workspace @mini-n8n/web\"",
+    "build": "npm run build --workspace @mini-n8n/api && npm run build --workspace @mini-n8n/web",
+    "start": "npm run start --workspace @mini-n8n/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

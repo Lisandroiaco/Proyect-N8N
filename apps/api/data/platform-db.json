@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": "8ILahclYmvntH3Y7XY63m",
+      "name": "Lisandro Iacobellis",
+      "username": "Lichan",
+      "email": "lisi.iacobellis@gmail.com",
+      "password": "$argon2id$v=19$m=19456,t=3,p=1$gSgWKugZjk2EC6CXEJ59Rg$4rm8Jnn1nCYnNQgvJz5v4+c6eEUl21tmQOUMpLeMbdM",
+      "avatar": "",
+      "bio": "",
+      "createdAt": "2026-04-05T21:26:53.921Z",
+      "updatedAt": "2026-04-05T21:27:40.781Z",
+      "verified": true,
+      "role": "user",
+      "banner": "",
+      "location": "",
+      "website": "",
+      "socialLinks": [],
+      "availableForWork": true,
+      "isPrivate": false,
+      "twoFactorEnabled": false
+    }
+  ],
+  "profiles": [
+    {
+      "userId": "8ILahclYmvntH3Y7XY63m",
+      "contactEmail": "lisi.iacobellis@gmail.com",
+      "experiences": [],
+      "education": [],
+      "skills": [],
+      "projects": [],
+      "certifications": [],
+      "achievements": [],
+      "sectionOrder": [
+        "general",
+        "experience",
+        "education",
+        "skills",
+        "projects",
+        "certifications",
+        "achievements",
+        "activity",
+        "contact"
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "a1UcG_XRLIl1zfHvUMBhd",
+      "userId": "8ILahclYmvntH3Y7XY63m",
+      "refreshTokenHash": "c12713f631b2029f07df31031e3e2a2175daf01c8646105d95363aafc522c215",
+      "deviceName": "Current browser",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "ipAddress": "::1",
+      "rememberMe": true,
+      "createdAt": "2026-04-05T21:27:51.551Z",
+      "lastSeenAt": "2026-04-05T21:27:51.551Z"
+    }
+  ],
+  "authTokens": [
+    {
+      "id": "-oR4Pdn6VydVjIlI63lpi",
+      "userId": "8ILahclYmvntH3Y7XY63m",
+      "type": "email-verification",
+      "tokenHash": "9e8c4ac34afe6af9c6cfb16622fbcc75d9870cc57b9ff69de42c8430dab38c13",
+      "expiresAt": "2026-04-06T21:26:54.009Z",
+      "consumedAt": "2026-04-05T21:27:40.781Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "egMpwe1fKuGW17pT4hqD5",
+      "userId": "8ILahclYmvntH3Y7XY63m",
+      "type": "auth.login",
+      "message": "Inicio de sesion exitoso.",
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "createdAt": "2026-04-05T21:27:51.572Z"
+    },
+    {
+      "id": "hJWE6ERgua3ucBw0mF1Jc",
+      "userId": "8ILahclYmvntH3Y7XY63m",
+      "type": "auth.register",
+      "message": "Cuenta creada.",
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "createdAt": "2026-04-05T21:26:53.921Z"
+    }
+  ],
+  "posts": [],
+  "followers": [],
+  "profileViews": [
+    {
+      "id": "X3OWwndFV8TvR06cU_jfu",
+      "profileUserId": "8ILahclYmvntH3Y7XY63m",
+      "createdAt": "2026-04-05T21:28:33.875Z"
+    },
+    {
+      "id": "c3K5bKG1Fbsi6JiScMVOx",
+      "profileUserId": "8ILahclYmvntH3Y7XY63m",
+      "createdAt": "2026-04-05T21:28:33.855Z"
+    }
+  ]
+}

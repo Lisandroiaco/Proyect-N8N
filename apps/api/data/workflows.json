@@ -1,0 +1,173 @@
+[
+  {
+    "id": "ZvF6pPHMyxw70B4frphtY",
+    "name": "Lead Capture Flow",
+    "description": "Recibe un payload, transforma datos y queda listo para conectarlo a APIs.",
+    "nodes": [
+      {
+        "id": "manualTrigger-0-8mwhg",
+        "type": "manualTrigger",
+        "position": {
+          "x": 140,
+          "y": 120
+        },
+        "data": {
+          "label": "Manual Trigger",
+          "config": {
+            "note": "Usa el panel Run para enviar el payload inicial."
+          }
+        }
+      },
+      {
+        "id": "transform-1-907ba",
+        "type": "transform",
+        "position": {
+          "x": 180,
+          "y": 152
+        },
+        "data": {
+          "label": "Transform",
+          "config": {
+            "template": "{\n  \"message\": \"Hola ${input.name}\",\n  \"email\": \"${input.email}\"\n}"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "manualTrigger-0-8mwhg-transform-1-907ba",
+        "source": "manualTrigger-0-8mwhg",
+        "target": "transform-1-907ba"
+      }
+    ],
+    "createdAt": "2026-04-05T21:28:04.685Z",
+    "updatedAt": "2026-04-05T21:28:07.544Z"
+  },
+  {
+    "id": "VxzcnWWAT0ZAbyOOD3OCS",
+    "name": "Discord Live Test",
+    "description": "Prueba real de Discord webhook",
+    "nodes": [
+      {
+        "id": "manual-1",
+        "type": "manualTrigger",
+        "position": {
+          "x": 120,
+          "y": 160
+        },
+        "data": {
+          "label": "Manual Trigger",
+          "config": {
+            "note": "Inicia prueba real"
+          }
+        }
+      },
+      {
+        "id": "transform-1",
+        "type": "transform",
+        "position": {
+          "x": 420,
+          "y": 160
+        },
+        "data": {
+          "label": "Prepare Discord Message",
+          "config": {
+            "template": "{\n  \"content\": \"Prueba real desde mini n8n para ${input.name} a las ${input.timestamp}\"\n}"
+          }
+        }
+      },
+      {
+        "id": "discord-1",
+        "type": "discordWebhook",
+        "position": {
+          "x": 760,
+          "y": 160
+        },
+        "data": {
+          "label": "Discord Webhook",
+          "config": {
+            "username": "Mini n8n Live Test",
+            "content": "${steps.transform-1.content}"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "manual-1-transform-1",
+        "source": "manual-1",
+        "target": "transform-1"
+      },
+      {
+        "id": "transform-1-discord-1",
+        "source": "transform-1",
+        "target": "discord-1"
+      }
+    ],
+    "createdAt": "2026-04-05T20:02:22.410Z",
+    "updatedAt": "2026-04-05T20:02:22.410Z"
+  },
+  {
+    "id": "starter-lead-welcome-flow",
+    "name": "Lead Welcome Flow",
+    "description": "Recibe un lead, arma el mensaje y deja el payload listo para enviarlo a una API o email.",
+    "nodes": [
+      {
+        "id": "manual-trigger-1",
+        "type": "manualTrigger",
+        "position": {
+          "x": 120,
+          "y": 160
+        },
+        "data": {
+          "label": "Manual Trigger",
+          "config": {
+            "note": "Payload de prueba desde el panel Run."
+          }
+        }
+      },
+      {
+        "id": "transform-1",
+        "type": "transform",
+        "position": {
+          "x": 430,
+          "y": 160
+        },
+        "data": {
+          "label": "Prepare Message",
+          "config": {
+            "template": "{\n  \"customer\": \"${input.name}\",\n  \"email\": \"${input.email}\",\n  \"message\": \"Hola ${input.name}, gracias por registrarte\"\n}"
+          }
+        }
+      },
+      {
+        "id": "wait-1",
+        "type": "wait",
+        "position": {
+          "x": 760,
+          "y": 160
+        },
+        "data": {
+          "label": "Wait 1s",
+          "config": {
+            "milliseconds": 1000
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "manual-trigger-1-transform-1",
+        "source": "manual-trigger-1",
+        "target": "transform-1"
+      },
+      {
+        "id": "transform-1-wait-1",
+        "source": "transform-1",
+        "target": "wait-1"
+      }
+    ],
+    "createdAt": "2026-04-05T19:45:00.000Z",
+    "updatedAt": "2026-04-05T19:45:00.000Z"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "7H8RvLysAtaxaO4RZEc_u",
+    "executionId": "73ingzzBp27e_-mlOQoOM",
+    "workflowId": "VxzcnWWAT0ZAbyOOD3OCS",
+    "workflowName": "Discord Live Test",
+    "createdAt": "2026-04-05T20:09:58.114Z",
+    "nodeId": "manual-1",
+    "nodeLabel": "Manual Trigger",
+    "channel": "manualTrigger",
+    "direction": "inbound",
+    "status": "success",
+    "summary": "Payload recibido por manual trigger.",
+    "payload": {
+      "timestamp": "2026-04-05T17:09:58.0947504-03:00",
+      "name": "Lucia"
+    }
+  },
+  {
+    "id": "jg-qawAqh_nReL3tZNjV7",
+    "executionId": "73ingzzBp27e_-mlOQoOM",
+    "workflowId": "VxzcnWWAT0ZAbyOOD3OCS",
+    "workflowName": "Discord Live Test",
+    "createdAt": "2026-04-05T20:09:58.868Z",
+    "nodeId": "discord-1",
+    "nodeLabel": "Discord Webhook",
+    "channel": "discordWebhook",
+    "direction": "outbound",
+    "status": "success",
+    "summary": "Mensaje enviado a Discord como Mini n8n Live Test.",
+    "recipient": "Discord webhook",
+    "payload": {
+      "username": "Mini n8n Live Test",
+      "content": "Prueba real desde mini n8n para Lucia a las 2026-04-05T17:09:58.0947504-03:00"
+    }
+  },
+  {
+    "id": "S8fnLxhk8pNDithkejoHo",
+    "executionId": "CiwGG3IJAzePRkdRVD-tl",
+    "workflowId": "VxzcnWWAT0ZAbyOOD3OCS",
+    "workflowName": "Discord Live Test",
+    "createdAt": "2026-04-05T20:02:22.420Z",
+    "nodeId": "manual-1",
+    "nodeLabel": "Manual Trigger",
+    "channel": "manualTrigger",
+    "direction": "inbound",
+    "status": "success",
+    "summary": "Payload recibido por manual trigger.",
+    "payload": {
+      "timestamp": "2026-04-05T17:02:22.4144575-03:00",
+      "name": "Lucia"
+    }
+  },
+  {
+    "id": "yWgnt2xeE8Ou9aesxsG4S",
+    "executionId": "CiwGG3IJAzePRkdRVD-tl",
+    "workflowId": "VxzcnWWAT0ZAbyOOD3OCS",
+    "workflowName": "Discord Live Test",
+    "createdAt": "2026-04-05T20:02:23.059Z",
+    "nodeId": "discord-1",
+    "nodeLabel": "Discord Webhook",
+    "channel": "discordWebhook",
+    "direction": "outbound",
+    "status": "success",
+    "summary": "Mensaje enviado a Discord como Mini n8n Live Test.",
+    "recipient": "Discord webhook",
+    "payload": {
+      "username": "Mini n8n Live Test",
+      "content": "Prueba real desde mini n8n para Lucia a las 2026-04-05T17:02:22.4144575-03:00"
+    }
+  },
+  {
+    "id": "c9ptTtZo0lcw8o8cfR898",
+    "executionId": "n2U72oef-xIve50srnPCz",
+    "workflowId": "starter-lead-welcome-flow",
+    "workflowName": "Lead Welcome Flow",
+    "createdAt": "2026-04-05T19:54:17.041Z",
+    "nodeId": "manual-trigger-1",
+    "nodeLabel": "Manual Trigger",
+    "channel": "manualTrigger",
+    "direction": "inbound",
+    "status": "success",
+    "summary": "Payload recibido por manual trigger.",
+    "payload": {
+      "name": "Lucia",
+      "email": "lucia@demo.dev",
+      "message": "hola desde prueba"
+    }
+  }
+]
